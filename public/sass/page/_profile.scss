@@ -1,0 +1,35 @@
+#profile {
+    background: url(../img/bg_img_profile.png) no-repeat 90% 10% /calc(137/320*100%) fixed, url(../img/bg.jpg) no-repeat center center;
+    p:first-of-type {
+        margin-top: 10px;
+    }
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+//TAB用CSS---------------------------------------
+@media screen and (min-width: 768px) {
+    #profile {
+        background: url(../img/bg_hana_profile.png) no-repeat 95% 90%/calc(100/1200*100%);
+        p {
+            display: inline;
+            line-height: 2.5;
+            padding: 0 5px;
+            background-color: #fff;
+        }
+        p:first-of-type {
+            margin-top: 0;
+        }
+    }
+}
+
+//PC用CSS---------------------------------------
+@media screen and (min-width: 1200px) {
+    .txt-abc {
+        margin: 10px 40px 0 40px;
+        &:first-of-type {
+            margin-right: 0;
+        }
+    }
+}

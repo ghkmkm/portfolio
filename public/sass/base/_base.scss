@@ -1,0 +1,79 @@
+    html,
+    body {
+        width: 100%;
+        height: 100vh;
+        min-width: 320px;
+        font-family: メイリオ, Meiryo, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+        font-size: 10px;
+        color: #333;
+        line-height: 1.5;
+    }
+    
+    .logo,
+    .sec-title,
+    .con_adress,
+    small {
+        font-family: 'Caveat', cursive;
+    }
+    
+    #wrap {
+        font-size: 1.4rem;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+    
+    #mv,
+    #profile,
+    #gallery,
+    #skill,
+    #contact {
+        padding: 50px 15px;
+    }
+    
+    #profile,
+    #gallery,
+    #skill,
+    #contact {
+        p {
+            margin: 25px 0;
+        }
+    }
+    
+    //TAB用CSS---------------------------------------
+    @media screen and (min-width: 768px) {
+        html,
+        body {
+            font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+            font-size: 10px;
+            color: #333;
+            line-height: 1.5;
+        }
+        #gnav,
+        small,
+        .sec-txt {
+            writing-mode: vertical-rl;
+        }
+        #wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        #profile,
+        #gallery,
+        #skill,
+        #contact {
+            width: 100%;
+            height: 100vh;
+            font-size: 1.6rem;
+            position: relative;
+        }
+        .sec-txt {
+            position: absolute;
+            right: 30%;
+            top: 18%;
+            padding-bottom: 45px;
+        }
+    }

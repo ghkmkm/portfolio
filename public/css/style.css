@@ -1,0 +1,739 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+html5doctor.com Reset Stylesheet
+v1.4
+2009-07-27
+Author: Richard Clark - http://richclarkdesign.com
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  min-width: 320px;
+  font-family: メイリオ, Meiryo, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 10px;
+  color: #333;
+  line-height: 1.5; }
+
+.logo,
+.sec-title,
+.con_adress,
+small {
+  font-family: 'Caveat', cursive; }
+
+#wrap {
+  font-size: 1.4rem; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom; }
+
+#mv,
+#profile,
+#gallery,
+#skill,
+#contact {
+  padding: 50px 15px; }
+
+#profile p,
+#gallery p,
+#skill p,
+#contact p {
+  margin: 25px 0; }
+
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 10px;
+    color: #333;
+    line-height: 1.5; }
+  #gnav,
+  small,
+  .sec-txt {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl; }
+  #wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  #profile,
+  #gallery,
+  #skill,
+  #contact {
+    width: 100%;
+    height: 100vh;
+    font-size: 1.6rem;
+    position: relative; }
+  .sec-txt {
+    position: absolute;
+    right: 30%;
+    top: 18%;
+    padding-bottom: 45px; } }
+
+#head {
+  position: relative; }
+
+#mv {
+  text-align: center; }
+  #mv a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333; }
+    #mv a:hover {
+      color: #fff; }
+
+.logo {
+  font-size: 6rem;
+  line-height: .7;
+  position: absolute;
+  top: -3px;
+  right: 2px; }
+
+#gnav,
+#mv {
+  background: url(../img/bg.jpg) no-repeat center center; }
+
+@media screen and (min-width: 768px) {
+  #head {
+    width: calc(205/1200*100%);
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 100; }
+  #mv {
+    height: 100vh;
+    position: relative;
+    background: #fff; }
+    #mv a:hover {
+      color: #fcff00; }
+  .mv-box {
+    width: calc(504/1200*100%);
+    height: auto;
+    vertical-align: bottom;
+    background: url(../img/head_mv_bg.jpg) no-repeat center top/contain;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: auto; }
+    .mv-box img {
+      margin-bottom: 20px; }
+  .logo {
+    font-size: 7rem;
+    position: absolute;
+    top: -2px;
+    right: 3px;
+    float: right; } }
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 9rem; } }
+
+#gnav {
+  width: 100%;
+  display: none; }
+  #gnav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  #gnav li {
+    line-height: 50px; }
+  #gnav a {
+    display: block;
+    width: 50px;
+    height: 145px;
+    text-align: left;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #333;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    padding: 10px 0;
+    background-color: #fff;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-weight: bold; }
+    #gnav a:hover {
+      -webkit-box-shadow: 1px 1px 1px #333;
+      box-shadow: 1px 1px 1px #333; }
+    #gnav a span {
+      display: none; }
+
+.nav-prof a::after {
+  content: "ワタシノコト";
+  display: block; }
+
+.nav-prof a:hover::after {
+  content: "about";
+  font-size: 2rem;
+  display: block;
+  text-align: center; }
+
+.nav-skill a::after {
+  content: "デキルコト";
+  display: block; }
+
+.nav-skill a:hover::after {
+  content: "skill";
+  font-size: 2rem;
+  display: block;
+  text-align: center; }
+
+.nav-ga a::after {
+  content: "ツクルモノ";
+  display: block; }
+
+.nav-ga a:hover::after {
+  content: "gallery";
+  font-size: 2rem;
+  display: block;
+  text-align: center; }
+
+.nav-con a::after {
+  content: "レンラクサキ";
+  display: block; }
+
+.nav-con a:hover::after {
+  content: "contact";
+  font-size: 2rem;
+  display: block;
+  text-align: center; }
+
+@media screen and (min-width: 768px) {
+  #gnav {
+    display: block;
+    background: none; }
+    #gnav a {
+      background-color: transparent;
+      position: relative; }
+      #gnav a:hover {
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+      #gnav a::before {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 0;
+        background-color: #fcff00;
+        position: absolute;
+        right: 0;
+        top: 0;
+        -webkit-transition: .5s linear;
+        -o-transition: .5s linear;
+        transition: .5s linear; }
+      #gnav a:hover::before {
+        height: 100%; }
+  .nav-prof {
+    position: absolute;
+    top: calc(250/1200*100%);
+    left: calc(200/1200*100%); }
+  .nav-skill {
+    position: absolute;
+    top: calc(400/1200*100%);
+    left: calc(680/1200*100%); }
+  .nav-ga {
+    position: absolute;
+    top: calc(630/1200*100%);
+    left: calc(400/1200*100%); }
+  .nav-con {
+    position: absolute;
+    top: calc(850/1200*100%);
+    left: calc(750/1200*100%); } }
+
+.btn-top {
+  display: none; }
+
+.btn-top-320 {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px 0 0 10px;
+  text-decoration: none;
+  text-indent: -9999px;
+  background: url(../img/btn_top.svg) no-repeat center center/80% rgba(255, 255, 255, 0.5);
+  position: fixed;
+  right: 0;
+  bottom: 10px; }
+  .btn-top-320:hover {
+    background-color: #ddd; }
+
+@media screen and (min-width: 768px) {
+  .btn-top-320 {
+    display: none; }
+  #gnav .btn-top {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    text-indent: -9999px;
+    background: url(../img/btn_top.svg) no-repeat center center #fcff00;
+    position: absolute;
+    left: calc(690/1200*100%);
+    top: calc(180/1200*100%); }
+    #gnav .btn-top:hover {
+      background-color: #ba371c; }
+    #gnav .btn-top a::before {
+      width: 0; }
+    #gnav .btn-top a:hover::before {
+      width: 0; } }
+
+#main small {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 15px; }
+
+@media screen and (min-width: 768px) {
+  #main {
+    width: calc(995/1200*100%);
+    background: url(../img/bg.jpg) no-repeat center center/cover fixed; }
+    #main #profile,
+    #main #skill,
+    #main #gallery,
+    #main #contact {
+      -webkit-box-shadow: 1px 0 #333;
+      box-shadow: 1px 0 #333;
+      overflow-x: visible; }
+    #main small {
+      width: auto;
+      padding-top: 0;
+      float: left;
+      position: fixed;
+      bottom: 15px;
+      left: 10px; } }
+
+.btn-menu {
+  padding: 20px; }
+
+@media screen and (min-width: 768px) {
+  .btn-menu {
+    display: none; } }
+
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.menu-trigger {
+  position: relative;
+  width: 50px;
+  height: 44px; }
+
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 4px; }
+
+.menu-trigger span:nth-of-type(1) {
+  top: 0; }
+
+.menu-trigger span:nth-of-type(2) {
+  top: 20px; }
+
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0; }
+
+.menu-trigger span:nth-of-type(1) {
+  -webkit-animation: menu-bar01 .75s forwards;
+  animation: menu-bar01 .75s forwards; }
+
+@-webkit-keyframes menu-bar01 {
+  0% {
+    -webkit-transform: translateY(20px) rotate(45deg); }
+  50% {
+    -webkit-transform: translateY(20px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(0) rotate(0); } }
+
+@keyframes menu-bar01 {
+  0% {
+    -webkit-transform: translateY(20px) rotate(45deg);
+    transform: translateY(20px) rotate(45deg); }
+  50% {
+    -webkit-transform: translateY(20px) rotate(0);
+    transform: translateY(20px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0); } }
+
+.menu-trigger span:nth-of-type(2) {
+  -webkit-transition: all .25s .25s;
+  -o-transition: all .25s .25s;
+  transition: all .25s .25s;
+  opacity: 1; }
+
+.menu-trigger span:nth-of-type(3) {
+  -webkit-animation: menu-bar02 .75s forwards;
+  animation: menu-bar02 .75s forwards; }
+
+@-webkit-keyframes menu-bar02 {
+  0% {
+    -webkit-transform: translateY(-20px) rotate(-45deg); }
+  50% {
+    -webkit-transform: translateY(-20px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(0) rotate(0); } }
+
+@keyframes menu-bar02 {
+  0% {
+    -webkit-transform: translateY(-20px) rotate(-45deg);
+    transform: translateY(-20px) rotate(-45deg); }
+  50% {
+    -webkit-transform: translateY(-20px) rotate(0);
+    transform: translateY(-20px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0); } }
+
+.menu-trigger.active span:nth-of-type(1) {
+  -webkit-animation: active-menu-bar01 .75s forwards;
+  animation: active-menu-bar01 .75s forwards; }
+
+@-webkit-keyframes active-menu-bar01 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0); }
+  50% {
+    -webkit-transform: translateY(20px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(20px) rotate(45deg); } }
+
+@keyframes active-menu-bar01 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0); }
+  50% {
+    -webkit-transform: translateY(20px) rotate(0);
+    transform: translateY(20px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(20px) rotate(45deg);
+    transform: translateY(20px) rotate(45deg); } }
+
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0; }
+
+.menu-trigger.active span:nth-of-type(3) {
+  -webkit-animation: active-menu-bar03 .75s forwards;
+  animation: active-menu-bar03 .75s forwards; }
+
+@-webkit-keyframes active-menu-bar03 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0); }
+  50% {
+    -webkit-transform: translateY(-20px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(-20px) rotate(-45deg); } }
+
+@keyframes active-menu-bar03 {
+  0% {
+    -webkit-transform: translateY(0) rotate(0);
+    transform: translateY(0) rotate(0); }
+  50% {
+    -webkit-transform: translateY(-20px) rotate(0);
+    transform: translateY(-20px) rotate(0); }
+  100% {
+    -webkit-transform: translateY(-20px) rotate(-45deg);
+    transform: translateY(-20px) rotate(-45deg); } }
+
+.sec-title {
+  width: 195px;
+  line-height: 45px;
+  background-color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-shadow: 1px 1px 1px #333;
+  box-shadow: 1px 1px 1px #333;
+  margin: 0 auto 50px auto; }
+
+.txt-title {
+  display: inline;
+  line-height: 3;
+  padding: 5px;
+  background-color: #fff; }
+
+#profile .sec-title {
+  width: 135px;
+  text-align: inherit;
+  text-indent: 10px; }
+
+@media screen and (min-width: 768px) {
+  .sec-title {
+    margin: 0;
+    margin-left: 60%; } }
+
+@media screen and (min-width: 1200px) {
+  .sec-title {
+    margin: 0;
+    margin-left: 75%; } }
+
+#profile {
+  background: url(../img/bg_img_profile.png) no-repeat 90% 10%/calc(137/320*100%) fixed, url(../img/bg.jpg) no-repeat center center; }
+  #profile p:first-of-type {
+    margin-top: 10px; }
+  #profile p:last-of-type {
+    margin-bottom: 0; }
+
+@media screen and (min-width: 768px) {
+  #profile {
+    background: url(../img/bg_hana_profile.png) no-repeat 95% 90%/calc(100/1200*100%); }
+    #profile p {
+      display: inline;
+      line-height: 2.5;
+      padding: 0 5px;
+      background-color: #fff; }
+    #profile p:first-of-type {
+      margin-top: 0; } }
+
+@media screen and (min-width: 1200px) {
+  .txt-abc {
+    margin: 10px 40px 0 40px; }
+    .txt-abc:first-of-type {
+      margin-right: 0; } }
+
+#skill {
+  background: url(../img/bg_img_skill.png) no-repeat 90% 10%/calc(215/320*100%) fixed #fcff00; }
+  #skill .no-margin {
+    margin-top: 25px; }
+    #skill .no-margin p {
+      margin: 0; }
+
+@media screen and (min-width: 768px) {
+  #skill {
+    background: url(../img/bg_hana_skill.png) no-repeat 95% 90%/calc(100/1200*100%);
+    line-height: 2;
+    font-weight: 500; }
+  .skill-txt2 {
+    position: absolute;
+    right: 60%;
+    top: 18%;
+    padding-bottom: 50px; } }
+
+@media screen and (min-width: 1200px) {
+  #skill {
+    line-height: 3; } }
+
+#gallery {
+  background: url(../img/bg_img_creation.png) no-repeat 90% 10%/calc(137/320*100%) fixed, url(../img/bg.jpg) no-repeat center center; }
+
+.illust,
+.design {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 25px 0; }
+  .illust a,
+  .design a {
+    display: block;
+    width: calc(80/320*100%);
+    margin: 0 5px 10px 5px; }
+
+.design {
+  margin-bottom: 0; }
+  .design a {
+    margin-bottom: 0; }
+
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100; }
+
+#photo {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: calc(250/320*100%);
+  max-width: 300px;
+  z-index: 200; }
+
+@media screen and (min-width: 768px) {
+  #gallery {
+    background: url(../img/bg_hana_creation.png) no-repeat 95% 90%/calc(100/1200*100%); }
+  .illust,
+  .design {
+    margin: 0;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .illust a,
+    .design a {
+      display: inline;
+      width: 65px;
+      margin: 0 5px 10px 5px; }
+  #gallery .sec-txt.ga-txt2 {
+    position: absolute;
+    right: 70%;
+    top: 18%; }
+  #photo {
+    width: calc(400/1200*100%);
+    max-width: 400px; } }
+
+@media screen and (min-width: 1200px) {
+  .illust a,
+  .design a {
+    width: calc(80/1200*100%); } }
+
+#contact {
+  background: url(../img/bg_img_contact.png) no-repeat center 90%/calc(284/320*100%) fixed #fcff00;
+  text-align: center; }
+
+.con_adress {
+  display: inline-block;
+  width: 230px;
+  margin: 0 auto;
+  background: url(../img/icon_mail_black.svg) no-repeat left center;
+  font-size: 2.4rem;
+  padding-left: 15px; }
+
+@media screen and (min-width: 768px) {
+  #contact {
+    background: url(../img/bg_hana_contact.png) no-repeat 95% 90%/calc(100/1200*100%);
+    position: relative;
+    text-align: left; }
+    #contact p {
+      display: inline;
+      background-color: #fff;
+      line-height: 3; }
+  .con_adress {
+    display: inline;
+    width: auto;
+    margin: 0;
+    background: url(../img/icon_mail_black.svg) no-repeat center 10px;
+    padding: 35px 10px 10px 10px; } }

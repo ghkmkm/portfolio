@@ -1,0 +1,29 @@
+#main small {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+//TAB用CSS---------------------------------------
+@media screen and (min-width: 768px) {
+    #main {
+        width: calc(995/1200*100%);
+        background: url(../img/bg.jpg) no-repeat center center/cover fixed;
+        #profile,
+        #skill,
+        #gallery,
+        #contact {
+            box-shadow: 1px 0 #333;
+            overflow-x: visible;
+        }
+        small {
+            width: auto;
+            padding-top: 0;
+            float: left;
+            position: fixed;
+            bottom: 15px;
+            left: 10px;
+        }
+    }
+}

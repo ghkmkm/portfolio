@@ -1,0 +1,189 @@
+#gnav {
+    width: 100%;
+    display: none;
+    ul {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+    li {
+        line-height: 50px;
+    }
+    a {
+        display: block;
+        width: 50px;
+        height: 145px;
+        text-align: left;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #333;
+        writing-mode: vertical-rl;
+        padding: 10px 0;
+        background-color: #fff;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        font-weight: bold;
+        &:hover {
+            box-shadow: 1px 1px 1px #333;
+        }
+        span {
+            display: none;
+        }
+    }
+}
+
+.nav-prof {
+    a {
+        &::after {
+            content: "ワタシノコト";
+            display: block;
+        }
+        &:hover::after {
+            content: "about";
+            font-size: 2rem;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+.nav-skill {
+    a {
+        &::after {
+            content: "デキルコト";
+            display: block;
+        }
+        &:hover::after {
+            content: "skill";
+            font-size: 2rem;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+.nav-ga {
+    a {
+        &::after {
+            content: "ツクルモノ";
+            display: block;
+        }
+        &:hover::after {
+            content: "gallery";
+            font-size: 2rem;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+.nav-con {
+    a {
+        &::after {
+            content: "レンラクサキ";
+            display: block;
+        }
+        &:hover::after {
+            content: "contact";
+            font-size: 2rem;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+//TAB用CSS---------------------------------------
+@media screen and (min-width: 768px) {
+    #gnav {
+        display: block;
+        background: none;
+        a {
+            background-color: transparent;
+            position: relative;
+            &:hover {
+                box-shadow: none;
+            }
+            &::before {
+                content: "";
+                display: block;
+                width: 5px;
+                height: 0;
+                background-color: $ac;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: .5s linear;
+            }
+            &:hover::before {
+                height: 100%;
+            }
+        }
+    }
+    .nav-prof {
+        position: absolute;
+        top: calc(250/1200*100%);
+        left: calc(200/1200*100%);
+    }
+    .nav-skill {
+        position: absolute;
+        top: calc(400/1200*100%);
+        left: calc(680/1200*100%);
+    }
+    .nav-ga {
+        position: absolute;
+        top: calc(630/1200*100%);
+        left: calc(400/1200*100%);
+    }
+    .nav-con {
+        position: absolute;
+        top: calc(850/1200*100%);
+        left: calc(750/1200*100%);
+    }
+}
+
+//topへ戻る-------------------------------------------
+.btn-top {
+    display: none;
+}
+
+.btn-top-320 {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    text-decoration: none;
+    text-indent: -9999px;
+    background: url(../img/btn_top.svg) no-repeat center center/80% rgba(255, 255, 255, .5);
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    &:hover {
+        background-color: #ddd;
+    }
+}
+
+//TAB用CSS---------------------------------------
+@media screen and (min-width: 768px) {
+    .btn-top-320 {
+        display: none;
+    }
+    #gnav .btn-top {
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+        text-indent: -9999px;
+        background: url(../img/btn_top.svg) no-repeat center center $ac;
+        position: absolute;
+        left: calc(690/1200*100%);
+        top: calc(180/1200*100%);
+        &:hover {
+            background-color: #ba371c;
+        }
+        & a::before {
+            width: 0;
+        }
+        & a:hover::before {
+            width: 0;
+        }
+    }
+}

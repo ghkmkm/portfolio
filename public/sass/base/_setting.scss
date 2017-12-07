@@ -1,0 +1,15 @@
+$ac:#fcff00;
+$fc:#333;
+%cf {
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

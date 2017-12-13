@@ -1,41 +1,42 @@
-.sec-title {
-    width: 195px;
-    line-height: 45px;
-    background-color: #fff;
-    font-size: 3rem;
-    text-align: center;
-    vertical-align: middle;
-    box-shadow: 1px 1px 1px #333;
-    margin: 0 auto 50px auto;
-}
-
-.txt-title {
-    display: inline;
-    line-height: 3;
-    padding: 5px;
-    background-color: #fff;
-}
-
-#profile {
     .sec-title {
-        width: 135px;
-        text-align: inherit;
-        text-indent: 10px;
+        width: 195px;
+        line-height: 45px;
+        background-color: #fff;
+        font-size: 3rem;
+        text-align: center;
+        vertical-align: middle;
+        box-shadow: 1px 1px 1px #333;
+        margin: 0 auto 50px auto;
     }
-}
-
-//TAB用CSS---------------------------------------
-@media screen and (min-width: 768px) {
-    .sec-title {
-        margin: 0;
-        margin-left: 60%;
+    
+    .txt-title {
+        display: inline;
+        line-height: 3;
+        padding: 5px;
+        background-color: #fff;
     }
-}
-
-//PC用CSS---------------------------------------
-@media screen and (min-width: 1200px) {
-    .sec-title {
-        margin: 0;
-        margin-left: 75%;
+    
+    #profile {
+        .sec-title {
+            width: 135px;
+            text-align: inherit;
+            text-indent: 10px;
+        }
     }
-}
+    
+    //TAB用CSS---------------------------------------
+    @media screen and (min-width: 768px) {
+        .sec-title {
+            margin: 0;
+            position: absolute;
+            top: 10%;
+            right: 7%;
+        }
+        #profile {
+            .sec-title {
+                position: absolute;
+                top: 10%;
+                right: 12.5%;
+            }
+        }
+    }

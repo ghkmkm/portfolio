@@ -108,11 +108,14 @@ body {
   font-family: メイリオ, Meiryo, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-size: 10px;
   color: #333;
-  line-height: 1.5; }
+  line-height: 1.5;
+  background: url(../img/bg.jpg) repeat right top; }
 
 .logo,
 .sec-title,
 .con_adress,
+.re-320,
+.re-768,
 small {
   font-family: 'Caveat', cursive; }
 
@@ -128,7 +131,7 @@ img {
 #gallery,
 #skill,
 #contact {
-  padding: 50px 15px; }
+  padding: 0 15px; }
   #profile p,
   #gallery p,
   #skill p,
@@ -141,7 +144,8 @@ img {
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     font-size: 10px;
     color: #333;
-    line-height: 1.5; }
+    line-height: 1.5;
+    background: transparent; }
   #gnav,
   small,
   .sec-txt {
@@ -180,8 +184,9 @@ img {
   font-size: 6rem;
   line-height: .7;
   position: absolute;
-  top: -3px;
-  right: 2px; }
+  top: 0;
+  right: 3px;
+  letter-spacing: 2px; }
 
 @media screen and (min-width: 768px) {
   #head {
@@ -190,11 +195,11 @@ img {
     position: fixed;
     right: 0;
     bottom: 0;
-    z-index: 100; }
+    background-color: transparent; }
   .logo {
     font-size: 7rem;
     position: absolute;
-    top: -2px;
+    top: 0;
     right: 3px;
     float: right; } }
 
@@ -334,7 +339,7 @@ img {
   right: 0;
   bottom: 10px; }
   .btn-top-320:hover {
-    background-color: #ddd; }
+    background-color: #6d0000; }
 
 @media screen and (min-width: 768px) {
   .btn-top-320 {
@@ -347,8 +352,8 @@ img {
     text-indent: -9999px;
     background: url(../img/btn_top.svg) no-repeat center center #fcff00;
     position: absolute;
-    left: calc(690/1200*100%);
-    top: calc(220/1200*100%); }
+    left: 1px;
+    top: 85%; }
     #gnav .btn-top:hover {
       background-color: #ba371c; }
     #gnav .btn-top a::before {
@@ -363,25 +368,33 @@ img {
   padding-top: 15px; }
 
 #mv {
+  position: relative;
   text-align: center;
-  background: url(../img/bg.jpg) no-repeat center center;
-  padding: 50px 15px; }
+  background: url(../img/bg.jpg) no-repeat center center; }
   #mv a {
     margin-top: 10px;
     text-decoration: none;
     font-weight: bold;
     color: #333; }
     #mv a:hover {
-      color: #fff; }
+      color: #6d0000; }
 
 .mv-box {
-  padding: 50% 0; }
+  width: calc(300/320*100%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: auto; }
 
 .re-768 {
   display: none; }
 
 .re-320 {
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 2.5rem; }
 
 @media screen and (min-width: 768px) {
   #main {
@@ -409,6 +422,7 @@ img {
       color: #fcff00; }
   .mv-box {
     width: calc(500/1200*100%);
+    min-width: 400px;
     height: auto;
     background: url(../img/head_mv_bg.jpg) no-repeat center top/contain;
     position: absolute;
@@ -431,7 +445,8 @@ img {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    margin: auto; } }
+    margin: auto;
+    font-size: 3rem; } }
 
 .btn-menu {
   padding: 20px; }
@@ -589,6 +604,9 @@ img {
   padding: 5px;
   background-color: #fff; }
 
+#gallery .txt-title {
+  margin-top: 20px; }
+
 #profile .sec-title {
   width: 135px;
   text-align: inherit;
@@ -655,8 +673,12 @@ img {
     line-height: 3; } }
 
 #gallery {
-  height: 700px;
   background: url(../img/bg_img_creation.png) no-repeat 90% 10%/calc(137/320*100%) fixed, url(../img/bg.jpg) no-repeat center center; }
+  @media screen and (max-width: 768px) {
+    #gallery {
+      height: auto !important; }
+      #gallery .fp-tableCell {
+        height: auto !important; } }
 
 .illust,
 .design {
@@ -705,6 +727,7 @@ img {
     background: url(../img/bg_hana_creation.png) no-repeat 95% 90%/calc(100/1200*100%); }
   .illust,
   .design {
+    padding: 20px 0 10px 0;
     margin: 0;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -748,6 +771,8 @@ img {
       display: inline;
       background-color: #fff;
       line-height: 3; }
+  .con_annoce {
+    padding: 5px 2px; }
   .con_adress {
     display: inline;
     width: auto;

@@ -7,11 +7,14 @@
         font-size: 10px;
         color: #333;
         line-height: 1.5;
+        background: url(../img/bg.jpg) repeat right top;
     }
     
     .logo,
     .sec-title,
     .con_adress,
+    .re-320,
+    .re-768,
     small {
         font-family: 'Caveat', cursive;
     }
@@ -30,7 +33,7 @@
     #gallery,
     #skill,
     #contact {
-        padding: 50px 15px;
+        padding: 0 15px;
         p {
             margin: 25px 0;
         }
@@ -44,6 +47,7 @@
             font-size: 10px;
             color: #333;
             line-height: 1.5;
+            background: transparent;
         }
         #gnav,
         small,

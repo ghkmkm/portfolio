@@ -10,12 +10,13 @@
     <title>mon portfolio - k.m.</title>
     <link href="https://fonts.googleapis.com/css?family=Caveat:700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/shortcut_icon.png" type="image/png">
 </head>
 
 <body>
     <div id="wrap">
         <header id="head">
-            <h1 class="logo">kunimoto<br>mai</h1>
+            <h1 class="logo">Portfolio<br>de k.m.</h1>
             <div class="btn-menu">
                 <a class="menu-trigger" href="#">
                     <span></span>
@@ -26,19 +27,19 @@
 
             <nav id="gnav">
                 <ul>
-                    <li class="btn-top" date-anchor="page1">
+                    <li class="btn-top" date-menu-anchor="page1">
                         <a href="#page1">toppage</a>
                     </li>
-                    <li class="nav-prof" date-anchor="page2">
+                    <li class="nav-prof" date-menu-anchor="page2">
                         <a href="#page2"><span>ワタシノコト</span></a>
                     </li>
-                    <li class="nav-skill" date-anchor="page3">
+                    <li class="nav-skill" date-menu-anchor="page3">
                         <a href="#page3"><span>デキルコト</span></a>
                     </li>
-                    <li class="nav-ga" date-anchor="page4">
+                    <li class="nav-ga" date-menu-anchor="page4">
                         <a href="#page4"><span>ツクルモノ</span></a>
                     </li>
-                    <li class="nav-con" date-anchor="page5">
+                    <li class="nav-con" date-menu-anchor="page5">
                         <a href="#page5"><span>レンラクサキ</span></a>
                     </li>
                 </ul>
@@ -52,7 +53,8 @@
             <div class="main-inner">
                 <section id="mv" class="section">
                     <div class="mv-box">
-                        <img src="img/mv_anime.gif" alt="メインビジュアル">
+                        <h2>
+                            <img src="img/mv_anime.gif" alt="メインビジュアル"></h2>
                         <p class="re-320"><a href="index.html">Replay</a></p>
                     </div>
                     <p class="re-768"><a href="index.html">Replay</a></p>
@@ -109,7 +111,7 @@
                 </section>
                 <!--skill-->
 
-                <section id="gallery" class="section">
+                <section id="gallery" class="section fp-auto-height-responsive">
                     <h2 class="sec-title">Les creations</h2>
                     <div class="sec-txt ga-txt">
                         <h3 class="txt-title">イラストレーション</h3>
@@ -139,6 +141,7 @@
                             <a href="img/g_bn_nextone.jpg"><img src="img/g_img_bn_sam2.jpg" alt="デザイン"></a>
                             <a href="img/g_bn_hotel.jpg"><img src="img/g_img_bn_sam3.jpg" alt="デザイン"></a>
                         </div>
+                        <!--デザイン-->
                     </div>
                     <!--sec-txt ga-txt-->
                 </section>
@@ -147,11 +150,11 @@
                 <section id="contact" class="section">
                     <h2 class="sec-title">Ecrivez-moi !</h2>
                     <div class="sec-txt con-txt">
-                        <p>ご連絡はこちらよりお願いいたします。</p>
+                        <p class="con_annoce">ご連絡はこちらよりお願いいたします。</p>
                         <p class="con_adress">webkmkm@gmail.com</p>
                     </div>
                     <!--sec-txt con-txt-->
-                    <p><small>&copy 2017 Kunimoto Mai All Rights Reserves.</small></p>
+                    <p><small>&copy; 2017 Kunimoto Mai All Rights Reserved.</small></p>
                 </section>
                 <!--contact-->
 
@@ -159,14 +162,15 @@
             <!--main-inner-->
 
         </main>
-        <div><a href="#head" class="btn-top-320">top</a></div>
+        <div><a href="#page1" class="btn-top-320">top</a></div>
 
     </div>
     <!--wrap-->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
-    
+
     <script src="js/script.js"></script>
 
 </body>

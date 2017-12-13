@@ -158,7 +158,7 @@
     right: 0;
     bottom: 10px;
     &:hover {
-        background-color: #ddd;
+        background-color: #6d0000;
     }
 }
 
@@ -175,8 +175,8 @@
         text-indent: -9999px;
         background: url(../img/btn_top.svg) no-repeat center center $ac;
         position: absolute;
-        left: calc(690/1200*100%);
-        top: calc(220/1200*100%);
+        left: 1px;
+        top: 85%;
         &:hover {
             background-color: #ba371c;
         }

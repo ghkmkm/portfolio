@@ -8,15 +8,6 @@ $(function () {
     });
 
 
-    $(".btn-top-320").click(function () {
-        var target = $($(this).attr("href")).offset().top;
-        $("html,body").stop().animate({
-            scrollTop: target
-        }, 400);
-        return false;
-    });
-
-
     // Modal win.---------------------------------
 
     $("#gallery a").click(function () {
@@ -46,16 +37,19 @@ $(function () {
         });
         return false;
     });
+});
 
-    $(document).ready(function () {
-        $('.main-inner').fullpage({
-            menu: "#gnav",
-            anchors: ["page1", "page2", "page3", "page4", "page5"],
-            scrollOverflow: true,
-            scrollOverflowReset: true,
-            
-            responsiveWidth: 768
-        });
+// fullpage---------------------------------
+
+$(document).ready(function () {
+    $('.main-inner').fullpage({
+        menu: "#gnav",
+        anchors: ["page1", "page2", "page3", "page4", "page5"],
+        scrollOverflow: true,
+        scrollOverflowReset: true,
+        paddingTop: '50px',
+        paddingBottom: '50px',
+        responsiveWidth: 768
+
     });
-
 });

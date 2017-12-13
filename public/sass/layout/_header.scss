@@ -9,8 +9,9 @@
             font-size: 6rem;
             line-height: .7;
             position: absolute;
-            top: -3px;
-            right: 2px;
+            top: 0;
+            right: 3px;
+            letter-spacing: 2px;
         }
         
         //TAB用CSS---------------------------------------
@@ -21,12 +22,12 @@
                 position: fixed;
                 right: 0;
                 bottom: 0;
-                z-index: 100;
+                background-color: transparent;
             }
             .logo {
                 font-size: 7rem;
                 position: absolute;
-                top: -2px;
+                top: 0;
                 right: 3px;
                 float: right;
             }

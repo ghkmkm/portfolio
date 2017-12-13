@@ -1,18 +1,8 @@
         #head {
-            position: relative;
-        }
-        
-        #mv {
-            text-align: center;
-            a {
-                margin-top: 10px;
-                text-decoration: none;
-                font-weight: bold;
-                color: #333;
-                &:hover {
-                    color: #fff;
-                }
-            }
+            position: absolute;
+            z-index: 100;
+            width: 100%;
+            background-color: #fff;
         }
         
         .logo {
@@ -21,11 +11,6 @@
             position: absolute;
             top: -3px;
             right: 2px;
-        }
-        
-        #gnav,
-        #mv {
-            background: url(../img/bg.jpg) no-repeat center center;
         }
         
         //TAB用CSS---------------------------------------
@@ -37,30 +22,6 @@
                 right: 0;
                 bottom: 0;
                 z-index: 100;
-            }
-            #mv {
-                height: 100vh;
-                position: relative;
-                background: #fff;
-                a {
-                    &:hover {
-                        color: $ac;
-                    }
-                }
-            }
-            .mv-box {
-                width: calc(504/1200*100%);
-                height: auto;
-                vertical-align: bottom;
-                background: url(../img/head_mv_bg.jpg) no-repeat center top/contain;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                margin: auto;
-                img {
-                    margin-bottom: 20px;
-                }
             }
             .logo {
                 font-size: 7rem;

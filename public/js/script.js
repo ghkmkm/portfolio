@@ -7,24 +7,7 @@ $(function () {
         return false;
     })
 
-    // スムーススクロール-----------------------------
 
-    $("#gnav li a").click(function () {
-        var target = $($(this).attr("href")).offset().top;
-        $("html,body").stop().animate({
-            scrollTop: target
-        }, 400);
-        return false;
-    });
-
-    $(".btn-top").click(function () {
-        var target = $($(this).attr("href")).offset().top;
-        $("html,body").stop().animate({
-            scrollTop: target
-        }, 400);
-        return false;
-    });
-    
     $(".btn-top-320").click(function () {
         var target = $($(this).attr("href")).offset().top;
         $("html,body").stop().animate({
@@ -32,6 +15,7 @@ $(function () {
         }, 400);
         return false;
     });
+
 
     // Modal win.---------------------------------
 
@@ -63,5 +47,40 @@ $(function () {
         return false;
     });
 
-    
+    $(document).ready(function () {
+        $('.main-inner').fullpage({
+            menu: "#gnav",
+            anchors: ["page1", "page2", "page3", "page4", "page5"],
+            responsiveWidth: 768
+        });
+    });
+
+
+
+    //    var $win = $(window);
+    //
+    //    $win.on('load resize', function () {
+    //        var windowWidth = window.innerWidth;
+    //
+    //        if (windowWidth > 768) {
+    //            $(document).ready(function () {
+    //                $('.main-inner').fullpage({
+    //                    menu: "#gnav",
+    //                    anchors: ["page1", "page2", "page3", "page4", "page5"]
+    //                });
+    //            });
+    //        } else {
+    //            
+    //            // スムーススクロール---------------------
+    //
+    //            $("#gnav li a").click(function () {
+    //                var target = $($(this).attr("href")).offset().top;
+    //                $("html,body").stop().animate({
+    //                    scrollTop: target
+    //                }, 400);
+    //                return false;
+    //            });
+    //        }
+    //    });
+
 });

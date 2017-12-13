@@ -1,6 +1,7 @@
 #gnav {
     width: 100%;
     display: none;
+    background: url(../img/bg.jpg) no-repeat center center;
     ul {
         display: flex;
         align-items: stretch;
@@ -94,7 +95,7 @@
 //TAB用CSS---------------------------------------
 @media screen and (min-width: 768px) {
     #gnav {
-        display: block;
+        display: block !important;
         background: none;
         a {
             background-color: transparent;
@@ -103,7 +104,7 @@
                 box-shadow: none;
             }
             &::before {
-                content: "";
+                content: "" !important;
                 display: block;
                 width: 5px;
                 height: 0;
@@ -120,7 +121,7 @@
     }
     .nav-prof {
         position: absolute;
-        top: calc(250/1200*100%);
+        top: calc(300/1200*100%);
         left: calc(200/1200*100%);
     }
     .nav-skill {
@@ -167,7 +168,7 @@
         display: none;
     }
     #gnav .btn-top {
-        display: block;
+        display: block !important;
         width: 50px;
         height: 50px;
         text-decoration: none;
@@ -175,7 +176,7 @@
         background: url(../img/btn_top.svg) no-repeat center center $ac;
         position: absolute;
         left: calc(690/1200*100%);
-        top: calc(180/1200*100%);
+        top: calc(220/1200*100%);
         &:hover {
             background-color: #ba371c;
         }

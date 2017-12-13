@@ -5,6 +5,32 @@
     padding-top: 15px;
 }
 
+#mv {
+    text-align: center;
+    background: url(../img/bg.jpg) no-repeat center center;
+    a {
+        margin-top: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.mv-box {
+    padding: 50% 0;
+}
+
+.re-768 {
+    display: none;
+}
+
+.re-320 {
+    margin-top: 10px;
+}
+
 //TAB用CSS---------------------------------------
 @media screen and (min-width: 768px) {
     #main {
@@ -21,9 +47,43 @@
             width: auto;
             padding-top: 0;
             float: left;
-            position: fixed;
+            position: absolute;
             bottom: 15px;
             left: 10px;
         }
+    }
+    #mv {
+        height: 100vh;
+        position: relative;
+        background: #fff;
+        a {
+            &:hover {
+                color: $ac;
+            }
+        }
+    }
+    .mv-box {
+        width: calc(500/1200*100%);
+        height: auto;
+        background: url(../img/head_mv_bg.jpg) no-repeat center top/contain;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-right: 5px;
+    }
+    .re-320 {
+        display: none;
+    }
+    .re-768 {
+        display: block !important;
+        position: absolute;
+        left: 50%;
+        top: 77%;
+        transform: translate(-50%, -50%);
+        margin: auto;
     }
 }

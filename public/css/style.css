@@ -132,6 +132,17 @@ img {
 #skill,
 #contact {
   padding: 0 15px; }
+  @media screen and (max-width: 768px) {
+    #profile,
+    #gallery,
+    #skill,
+    #contact {
+      height: auto !important; }
+      #profile .fp-tableCell,
+      #gallery .fp-tableCell,
+      #skill .fp-tableCell,
+      #contact .fp-tableCell {
+        height: auto !important; } }
   #profile p,
   #gallery p,
   #skill p,
@@ -387,13 +398,6 @@ img {
   transform: translate(-50%, -50%);
   margin: auto; }
 
-.re-768 {
-  display: none; }
-
-.re-320 {
-  margin-top: 10px;
-  font-size: 2.5rem; }
-
 @media screen and (min-width: 768px) {
   #main {
     width: calc(995/1200*100%);
@@ -432,19 +436,7 @@ img {
     margin: auto;
     padding-top: 30px;
     padding-bottom: 10px;
-    padding-right: 5px; }
-  .re-320 {
-    display: none; }
-  .re-768 {
-    display: block !important;
-    position: absolute;
-    left: 50%;
-    top: 77%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    margin: auto;
-    font-size: 3rem; } }
+    padding-right: 5px; } }
 
 .btn-menu {
   padding: 20px; }
@@ -674,11 +666,6 @@ img {
 
 #gallery {
   background: url(../img/bg_img_creation.png) no-repeat 90% 10%/calc(137/320*100%) fixed, url(../img/bg.jpg) no-repeat center center; }
-  @media screen and (max-width: 768px) {
-    #gallery {
-      height: auto !important; }
-      #gallery .fp-tableCell {
-        height: auto !important; } }
 
 .sakuhin {
   display: -webkit-box;
@@ -739,6 +726,11 @@ img {
   background: url(../img/icon_mail_black.svg) no-repeat left center;
   font-size: 2.4rem;
   padding-left: 15px; }
+  .con_adress a {
+    text-decoration: none;
+    color: #333; }
+    .con_adress a:hover {
+      color: #6d0000; }
 
 @media screen and (min-width: 768px) {
   #contact {
@@ -746,14 +738,17 @@ img {
     position: relative;
     text-align: left; }
     #contact p {
-      display: inline;
+      display: inline-block;
       background-color: #fff;
-      line-height: 3; }
-  .con_annoce {
+      line-height: 1.3;
+      margin: 0 5px 0; }
+      #contact p:last-of-type {
+        margin: 0 20px 0; }
+  .con_annonce {
     padding: 5px 2px; }
   .con_adress {
-    display: inline;
     width: auto;
-    margin: 0;
     background: url(../img/icon_mail.svg) no-repeat center 10px;
-    padding: 35px 10px 10px 10px; } }
+    padding: 35px 10px 10px 10px; }
+    .con_adress a:hover {
+      color: #fcff00; } }

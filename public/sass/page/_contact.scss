@@ -10,6 +10,13 @@
     background: url(../img/icon_mail_black.svg) no-repeat left center;
     font-size: 2.4rem;
     padding-left: 15px;
+    a {
+        text-decoration: none;
+        color: $fc;
+        &:hover {
+            color: $ac2;
+        }
+    }
 }
 
 //TAB用CSS---------------------------------------
@@ -19,19 +26,26 @@
         position: relative;
         text-align: left;
         p {
-            display: inline;
+            display: inline-block;
             background-color: #fff;
-            line-height: 3;
+            line-height: 1.3;
+            margin: 0 5px 0;
+            &:last-of-type {
+                margin: 0 20px 0;
+            }
         }
     }
-    .con_annoce {
+    .con_annonce {
         padding: 5px 2px;
     }
     .con_adress {
-        display: inline;
         width: auto;
-        margin: 0;
         background: url(../img/icon_mail.svg) no-repeat center 10px;
         padding: 35px 10px 10px 10px;
+        a {
+            &:hover {
+                color: $ac;
+            }
+        }
     }
 }

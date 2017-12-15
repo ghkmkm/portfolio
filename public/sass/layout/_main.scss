@@ -29,15 +29,6 @@
     margin: auto;
 }
 
-.re-768 {
-    display: none;
-}
-
-.re-320 {
-    margin-top: 10px;
-    font-size: 2.5rem;
-}
-
 //TAB用CSS---------------------------------------
 @media screen and (min-width: 768px) {
     #main {
@@ -82,17 +73,5 @@
         padding-top: 30px;
         padding-bottom: 10px;
         padding-right: 5px;
-    }
-    .re-320 {
-        display: none;
-    }
-    .re-768 {
-        display: block !important;
-        position: absolute;
-        left: 50%;
-        top: 77%;
-        transform: translate(-50%, -50%);
-        margin: auto;
-        font-size: 3rem;
     }
 }

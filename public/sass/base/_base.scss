@@ -33,6 +33,12 @@
     #gallery,
     #skill,
     #contact {
+        @media screen and (max-width: 768px) {
+            height: auto !important;
+            .fp-tableCell {
+                height: auto !important;
+            }
+        }
         padding: 0 15px;
         p {
             margin: 25px 0;
@@ -73,8 +79,3 @@
             padding-bottom: 30px;
         }
     }
-
-
-
-
-

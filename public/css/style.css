@@ -164,15 +164,13 @@ img {
   #skill,
   #contact {
     padding: 0 15px;
-    width: 100%;
-    height: 100vh;
     font-size: 1.6rem;
     position: relative; }
   .sec-txt {
     position: absolute;
     right: 30%;
-    top: 18%;
-    padding-bottom: 45px; } }
+    top: 19%;
+    padding-bottom: 30px; } }
 
 #head {
   position: absolute;
@@ -197,7 +195,7 @@ img {
     bottom: 0;
     background-color: transparent; }
   .logo {
-    font-size: 7rem;
+    font-size: 6rem;
     position: absolute;
     top: 0;
     right: 3px;
@@ -604,9 +602,6 @@ img {
   padding: 5px;
   background-color: #fff; }
 
-#gallery .txt-title {
-  margin-top: 20px; }
-
 #profile .sec-title {
   width: 135px;
   text-align: inherit;
@@ -621,17 +616,22 @@ img {
   #profile .sec-title {
     position: absolute;
     top: 10%;
-    right: 12.5%; } }
+    right: 12.5%; }
+  .design {
+    display: inline-block;
+    line-height: 1.3;
+    margin: 0 20px 0 0; } }
 
 #profile {
   background: url(../img/bg_img_profile.png) no-repeat 90% 10%/calc(137/320*100%) fixed, url(../img/bg.jpg) no-repeat center center; }
   #profile p {
     display: inline;
     margin: 2px 0; }
-  #profile .txt-abc {
-    padding: 10px 0; }
-    #profile .txt-abc:first-of-type {
-      padding-top: 5px; }
+
+.txt-abc {
+  padding: 10px 0; }
+  .txt-abc:first-of-type {
+    padding-top: 5px; }
 
 @media screen and (min-width: 768px) {
   #profile {
@@ -642,7 +642,7 @@ img {
       background-color: #fff;
       margin: 0 5px; }
   .txt-abc {
-    padding: 0; } }
+    padding: 17px 0 0; } }
 
 @media screen and (min-width: 1200px) {
   .txt-abc {
@@ -652,9 +652,9 @@ img {
 
 #skill {
   background: url(../img/bg_img_skill.png) no-repeat 90% 10%/calc(215/320*100%) fixed #fcff00; }
-  #skill .no-margin {
+  #skill .skilltxt2-m {
     margin-top: 25px; }
-    #skill .no-margin p {
+    #skill .skilltxt2-m p {
       margin: 0; }
 
 @media screen and (min-width: 768px) {
@@ -665,7 +665,7 @@ img {
   .skill-txt2 {
     position: absolute;
     right: 60%;
-    top: 18%;
+    top: 19%;
     padding-bottom: 50px; } }
 
 @media screen and (min-width: 1200px) {
@@ -680,8 +680,7 @@ img {
       #gallery .fp-tableCell {
         height: auto !important; } }
 
-.illust,
-.design {
+.sakuhin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,16 +689,10 @@ img {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 25px 0; }
-  .illust a,
-  .design a {
+  .sakuhin a {
     display: block;
     width: calc(80/320*100%);
     margin: 0 5px 10px 5px; }
-
-.design {
-  margin-bottom: 0; }
-  .design a {
-    margin-bottom: 0; }
 
 #bg {
   position: fixed;
@@ -725,30 +718,15 @@ img {
 @media screen and (min-width: 768px) {
   #gallery {
     background: url(../img/bg_hana_creation.png) no-repeat 95% 90%/calc(100/1200*100%); }
-  .illust,
-  .design {
-    padding: 20px 0 10px 0;
-    margin: 0;
+  .sakuhin {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
-    .illust a,
-    .design a {
-      display: inline;
-      width: 65px;
-      margin: 0 5px 10px 5px; }
-  #gallery .sec-txt.ga-txt2 {
-    position: absolute;
-    right: 70%;
-    top: 18%; }
+    .sakuhin a {
+      width: 60px; }
   #photo {
     width: calc(400/1200*100%);
     max-width: 400px; } }
-
-@media screen and (min-width: 1200px) {
-  .illust a,
-  .design a {
-    width: calc(80/1200*100%); } }
 
 #contact {
   background: url(../img/bg_img_contact.png) no-repeat center 80%/calc(284/320*100%) fixed #fcff00;

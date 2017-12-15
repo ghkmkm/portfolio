@@ -8,8 +8,7 @@
     }
 }
 
-.illust,
-.design {
+.sakuhin {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -18,13 +17,6 @@
         display: block;
         width: calc(80/320*100%);
         margin: 0 5px 10px 5px;
-    }
-}
-
-.design {
-    margin-bottom: 0;
-    a {
-        margin-bottom: 0;
     }
 }
 
@@ -55,34 +47,20 @@
     #gallery {
         background: url(../img/bg_hana_creation.png) no-repeat 95% 90%/calc(100/1200*100%);
     }
-    .illust,
-    .design {
-        padding: 20px 0 10px 0;
-        margin: 0;
+    .sakuhin {
         justify-content: flex-start;
         a {
-            display: inline;
-            width: 65px;
-            margin: 0 5px 10px 5px;
+            width: 60px;
         }
     }
-    #gallery .sec-txt.ga-txt2 {
-        position: absolute;
-        right: 70%;
-        top: 18%;
-    }
+    
     #photo {
         width: calc(400/1200*100%);
         max-width: 400px;
     }
 }
 
-//PC用CSS---------------------------------------
+//pc用CSS--------------------------------------- 
 @media screen and (min-width: 1200px) {
-    .illust,
-    .design {
-        a {
-            width: calc(80/1200*100%);
-        }
-    }
+    
 }

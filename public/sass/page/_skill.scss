@@ -1,6 +1,6 @@
 #skill {
     background: url(../img/bg_img_skill.png) no-repeat 90% 10% /calc(215/320*100%) fixed $ac;
-    .no-margin {
+    .skilltxt2-m {
         margin-top: 25px;
         p {
             margin: 0;
@@ -18,7 +18,7 @@
     .skill-txt2 {
         position: absolute;
         right: 60%;
-        top: 18%;
+        top: $tpt;
         padding-bottom: 50px;
     }
 }

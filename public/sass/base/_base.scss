@@ -63,15 +63,18 @@
         #skill,
         #contact {
             padding: 0 15px;
-            width: 100%;
-            height: 100vh;
             font-size: 1.6rem;
             position: relative;
         }
         .sec-txt {
             position: absolute;
             right: 30%;
-            top: 18%;
-            padding-bottom: 45px;
+            top: $tpt;
+            padding-bottom: 30px;
         }
     }
+
+
+
+
+

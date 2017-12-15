@@ -4,11 +4,12 @@
         display: inline;
         margin: 2px 0;
     }
-    .txt-abc {
-        padding: 10px 0;
-        &:first-of-type {
-            padding-top: 5px;
-        }
+}
+
+.txt-abc {
+    padding: 10px 0;
+    &:first-of-type {
+        padding-top: 5px;
     }
 }
 
@@ -24,7 +25,7 @@
         }
     }
     .txt-abc {
-        padding: 0;
+        padding: 17px 0 0;
     }
 }
 

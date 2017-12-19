@@ -726,7 +726,7 @@ img {
     -ms-flex-pack: start;
     justify-content: flex-start; }
     .sakuhin a {
-      width: 60px; }
+      width: 40px; }
   #photo {
     width: calc(400/1200*100%);
     max-width: 400px; }
@@ -744,6 +744,14 @@ img {
     padding: 35px 12px 10px 10px; }
     .link-git a:hover {
       color: #fcff00; } }
+
+@media screen and (min-width: 1000px) {
+  .sakuhin {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .sakuhin a {
+      width: 60px; } }
 
 #contact {
   background: url(../img/bg_img_contact.png) no-repeat center 80%/calc(284/320*100%) fixed #fcff00;

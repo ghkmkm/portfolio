@@ -690,7 +690,9 @@ img {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 100; }
 
-#photo {
+#photo,
+#photo2,
+#photo3 {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -698,7 +700,7 @@ img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin: auto;
-  width: calc(250/320*100%);
+  width: calc(300/320*100%);
   max-width: 300px;
   z-index: 200; }
 
@@ -713,7 +715,13 @@ img {
       width: 60px; }
   #photo {
     width: calc(400/1200*100%);
-    max-width: 400px; } }
+    max-width: 400px; }
+  #photo2 {
+    width: calc(800/1200*100%);
+    max-width: 800px; }
+  #photo3 {
+    width: calc(400/1200*100%);
+    max-width: 500px; } }
 
 #contact {
   background: url(../img/bg_img_contact.png) no-repeat center 80%/calc(284/320*100%) fixed #fcff00;

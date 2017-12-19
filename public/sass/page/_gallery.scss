@@ -25,16 +25,19 @@
     z-index: 100;
 }
 
-#photo {
+#photo, 
+#photo2, 
+#photo3{
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     margin: auto;
-    width: calc(250/320*100%);
+    width: calc(300/320*100%);
     max-width: 300px;
     z-index: 200;
 }
+
 
 //TAB用CSS---------------------------------------
 @media screen and (min-width: 768px) {
@@ -51,6 +54,14 @@
     #photo {
         width: calc(400/1200*100%);
         max-width: 400px;
+    }
+    #photo2 {
+        width: calc(800/1200*100%);
+        max-width: 800px;
+    }
+    #photo3 {
+        width: calc(400/1200*100%);
+        max-width: 500px;
     }
 }
 

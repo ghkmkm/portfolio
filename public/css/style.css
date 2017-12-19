@@ -675,11 +675,25 @@ img {
   flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 25px 0; }
+  margin: 25px auto; }
   .sakuhin a {
     display: block;
     width: calc(80/320*100%);
     margin: 0 5px 10px; }
+
+.link-git {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: url(../img/btn_git.png) no-repeat 30px center;
+  font-size: 1.4rem;
+  padding: 5px 0 5px 10px;
+  font-weight: bold; }
+  .link-git a {
+    text-decoration: none;
+    color: #333; }
+    .link-git a:hover {
+      color: #6d0000; }
 
 #bg {
   position: fixed;
@@ -721,7 +735,15 @@ img {
     max-width: 800px; }
   #photo3 {
     width: calc(400/1200*100%);
-    max-width: 500px; } }
+    max-width: 500px; }
+  .git {
+    margin-right: 30px; }
+  .link-git {
+    width: auto;
+    background: url(../img/btn_git.png) no-repeat top center;
+    padding: 35px 11px 10px 10px; }
+    .link-git a:hover {
+      color: #fcff00; } }
 
 #contact {
   background: url(../img/bg_img_contact.png) no-repeat center 80%/calc(284/320*100%) fixed #fcff00;

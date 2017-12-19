@@ -6,11 +6,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 25px 0;
+    margin: 25px auto;
     a {
         display: block;
         width: calc(80/320*100%);
         margin: 0 5px 10px;
+    }
+}
+
+.link-git {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: url(../img/btn_git.png) no-repeat 30px center;
+    font-size: 1.4rem;
+    padding: 5px 0 5px 10px;
+    font-weight: bold;
+    a {
+        text-decoration: none;
+        color: $fc;
+        &:hover {
+            color: $ac2;
+        }
     }
 }
 
@@ -25,9 +42,9 @@
     z-index: 100;
 }
 
-#photo, 
-#photo2, 
-#photo3{
+#photo,
+#photo2,
+#photo3 {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -37,7 +54,6 @@
     max-width: 300px;
     z-index: 200;
 }
-
 
 //TAB用CSS---------------------------------------
 @media screen and (min-width: 768px) {
@@ -50,7 +66,6 @@
             width: 60px;
         }
     }
-    
     #photo {
         width: calc(400/1200*100%);
         max-width: 400px;
@@ -63,5 +78,17 @@
         width: calc(400/1200*100%);
         max-width: 500px;
     }
+    .git {
+        margin-right: 30px;
+    }
+    .link-git {
+        width: auto;
+        background: url(../img/btn_git.png) no-repeat top center;
+        padding: 35px 11px 10px 10px;
+        a {
+            &:hover {
+                color: $ac;
+            }
+        }
+    }
 }
-

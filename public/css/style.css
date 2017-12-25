@@ -737,7 +737,7 @@ img {
     width: calc(400/1200*100%);
     max-width: 500px; }
   .git {
-    margin-right: 30px; }
+    margin-right: 0; }
   .link-git {
     width: auto;
     background: url(../img/btn_git.png) no-repeat top center;
